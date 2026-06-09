@@ -1,0 +1,56 @@
+<footer class="site-foot">
+  <div class="site-foot__logo">
+    <a href="/">
+      <svg
+        width="280"
+        height="280"
+        viewBox="0 0 280 280"
+        fill="var(--color-secondary)"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M45 50 h22 v180 h-22 z"></path>
+        <path d="M67 50 h61 v22 h-61 z"></path>
+        <path d="M106 50 h22 v85 h-22 z"></path>
+        <path d="M67 113 h61 v22 h-61 z"></path>
+        <path d="M106 135 L128 135 L150 230 L128 230 z"></path>
+        <path d="M160 50 h82 v22 h-82 z"></path>
+        <path d="M160 50 h22 v91 h-22 z"></path>
+        <path d="M160 130 h82 v22 h-82 z"></path>
+        <path d="M220 141 h22 v89 h-22 z"></path>
+        <path d="M160 208 h82 v22 h-82 z"></path>
+      </svg>
+
+      <span class="u-sr-only">Raj Singh</span>
+    </a>
+  </div><!-- .site-foot__logo -->
+</footer>
+
+<style lang="scss">
+  .site-foot {
+    @include flex(row, center, center);
+
+    position: relative;
+    z-index: 3;
+
+    padding: 1.5rem;
+
+    border-top: 1px solid color(secondary);
+
+    @include mq(phone) {
+      padding: 1rem;
+    }
+
+    &__logo {
+      svg {
+        display: block;
+        width: 3rem;
+        height: 3rem;
+
+        @include mq(phone) {
+          width: 1.875rem;
+          height: 1.875rem;
+        }
+      }
+    }
+  }
+</style>
